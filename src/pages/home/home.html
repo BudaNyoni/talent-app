@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>
+          Ionic Blank
+      </ion-title>
+      <ion-buttons start>
+          <button (click)="refresh()">Refresh</button>
+      </ion-buttons>
+      <ion-buttons end>
+          <button (click)="add()">Add</button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item href="#" *ngFor="let x of items" >
+        {{x.name}}
+        </ion-item>
+        
+        </ion-list>
+</ion-content>
